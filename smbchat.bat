@@ -1,12 +1,14 @@
 @echo off
-Chcp 936
-title smb聊天
-set path=%~dp0
-IF /i "%1"=="win" goto win
 Mode Con: Cols=100 Lines=40
+title smb聊天
+Chcp 936
+color 0f
+set path=%~dp0
 Setlocal enabledelayedexpansion
+IF /i "%1"=="win" goto win
 if exist "%path%admin.uac" (set nick=管理员 & set admin=1) ELSE (set nick=用户)
 if exist "%path%sti.bat" call sti.bat&goto income
+
 
 :inf
 cls
