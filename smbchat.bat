@@ -1,6 +1,6 @@
 @echo off
 Mode Con: Cols=100 Lines=40
-title smb聊天
+title smb聊天 ver 3.2
 Chcp 936
 color 0f
 set path=%~dp0
@@ -15,7 +15,7 @@ cls
 echo 请输入网络smb服务器：
 set /p net=IP:
 echo set net=%net%>>sti.bat
-echo 请输入用户民：
+echo 请输入用户名：
 set /p user=name:
 echo set user=%user%>>sti.bat
 
@@ -115,7 +115,7 @@ del /q %path%sti.bat
 echo set net=%net%>>%path%sti.bat
 echo %nick% %user% ^退^出^了^群^聊 >>%net%\temp.txt
 cls
-echo 请输入用户民：
+echo 请输入用户名：
 set /p user=name:
 echo set user=%user%>>%path%sti.bat
 goto income
