@@ -5,3 +5,4 @@
 <br>
 通过怼文件的方式进行聊天
 <br>
+详细信息及部署方法见：(paper的小站)[https://papernote.cn/post/243/]
